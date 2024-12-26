@@ -1,0 +1,88 @@
+/* Styling for the card container */
+.card-container {
+    display: flex;              /* Enable flexbox */
+    flex-wrap: wrap;            /* Allow wrapping for smaller screens */
+    justify-content: center;    /* Center the cards horizontally */
+    gap: 20px;                  /* Space between cards */
+    width: 100%;
+    margin-top: 20px;           /* Adds space between the table and the card */
+    padding: 0 10px;            /* Padding for better spacing on smaller screens */
+}
+
+/* Styling for the card */
+.card {
+    background-color: #fff;
+    border-radius: 15px;       /* Rounded corners */
+    padding: 20px;             /* Space inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 200px;              /* Fixed width (adjustable) */
+    max-width: 100%;           /* Makes it responsive */
+    text-align: center;        /* Centered text */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the card */
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the card content */
+.card h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the image */
+.card-image {
+    width: 100%;               /* Make the image take up the full width of the card */
+    height: auto;              /* Maintain aspect ratio */
+    border-radius: 15px;       /* Rounded corners for the image */
+    margin-bottom: 15px;       /* Space below the image */
+}
+
+/* Snowflake Image Style */
+.snowflake {
+    position: absolute;
+    top: -50px;               /* Start slightly above the viewport */
+    width: 30px;              /* Default image width */
+    height: 30px;             /* Default image height */
+    pointer-events: none;     /* Prevent user interaction */
+    background-size: contain; /* Scale image proportionally */
+    background-repeat: no-repeat; /* Prevent repeat */
+    animation: fall linear infinite;
+}
+
+/* Falling Animation */
+@keyframes fall {
+    0% {
+        transform: translateY(-50px); /* Start above the viewport */
+    }
+    100% {
+        transform: translateY(120vh); /* Fall below the bottom of the screen */
+    }
+}
+
+/* Prevent horizontal scroll */
+body, html {
+    overflow-x: hidden;
+}

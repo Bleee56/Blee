@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blee</title>
+        <link rel="stylesheet" href="Style.css">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <style>
+            /* Style for the navigation bar */
+            .navbar {
+                display: flex;
+                justify-content: center;
+                background-color: #333;
+                border-radius: 12px;
+                padding: 10px;
+            }
+
+            .navbar a {
+                color: white;
+              	font-family: Monaco;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+                font-size: 18px;
+                
+            }
+
+            .navbar a:hover {
+                background-color: #ddd;
+                color: black;
+                border-radius: 12px;
+            }
+
+            /* Optional: Add some spacing between the nav items */
+            .navbar a:not(:last-child) {
+                margin-right: 15px;
+            }
+        </style>
+      <style>
+        /* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+      </style>
+    </head>
+
+    <body style="background-color: floralwhite; width: auto">
+        <table style="width: 100%; background-color: white">
+            <tr>
+                <th style="text-align: center"><img src="LOGO/BLEE.png" style="width:20%"></th>
+            </tr>
+        </table>
+        <hr>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="https://linktr.ee/Bleelk">CONTACTS</a>
+          <a href="web-apps.html">WEB APPS</a>
+        </div>
+<table style="width:100%">
+  <tr>
+    <th style="width:3%"></th>
+    <th style="width:50%; text-aling:center">
+      <h1 style="font-family:Fantasy; font-size:300%">BLEE .</h1>
+      <p style="font-family:Monospace ; font-size:120%"><b>Let Us Help You Succeed We're here to support your business and help you achieve your goals. Our team can create eye-catching branding and marketing materials, build a strong online presence with social media ads, and even help you craft a professional CV or resume. We also offer reliable data entry services to keep your operations running smoothly. By taking care of these tasks, you'll have more time to focus on what matters most - growing your business and reaching new heights.</p>
+        <p>&nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;</p>
+        <a href="More.html"><button style="margin-left: -20px" class="button-85">More..</button></a>
+    </th>
+    <th style="width:50%">
+        <div class="card-container">
+            <div class="card">
+                <img src="Contents/01.png" alt="Card Image" class="card-image">
+                <h2 style="font-family: Impact">CREATE YOUR OWN PROFESSIONAL CV TODAY !</h2>
+                <a href="P1.html"><button>Read More</button></a>
+            </div>
+            <div class="card">
+                <img src="Contents/02.png" alt="Card Image" class="card-image">
+                <h2 style="font-family: Impact">CREATE STUNNING SOCIAL MEDIA AD POSTS </h2>
+                <a href="P2.html"><button>Read More</button></a>
+            </div>
+        </div>
+    </th>
+    </tr>
+      </table>
+        <script>
+            // Function to create a snowflake with an image
+            function createSnowflake() {
+                const snowflake = document.createElement("div");
+                snowflake.classList.add("snowflake");
+
+                // Set the background image for the snowflake
+                snowflake.style.backgroundImage = "url('Icons/2744_color.png')"; // Replace 'snowflake.png' with your image path
+
+                // Randomize position, size, and animation duration
+                snowflake.style.left = Math.random() * 100 + "vw"; // Random horizontal position
+                snowflake.style.width = Math.random() * 20 + 20 + "px"; // Random size (20px-40px)
+                snowflake.style.height = snowflake.style.width; // Keep width and height equal
+                snowflake.style.animationDuration = Math.random() * 3 + 7 + "s"; // Random fall speed (7s-10s)
+
+                // Append the snowflake to the body
+                document.body.appendChild(snowflake);
+
+                // Remove the snowflake after it falls out of view
+                setTimeout(() => {
+                    snowflake.remove();
+                }, 10000); // Match animation duration
+            }
+
+            // Generate snowflakes continuously
+            setInterval(createSnowflake, 100); // New snowflake every 100ms
+        </script>
+</body>
+</html>

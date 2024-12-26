@@ -1,0 +1,48 @@
+<html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Blee</title>
+            <link rel="stylesheet" href="Style2.css">
+        </head>
+    <body>
+            <div class="container">
+        <div class="product">
+            <div class="product-image">
+                <img src="Contents/01.png" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h2 style="font-family: Consolas">CREATE YOUR OWN PROFESSIONAL CV/RESUME</h2>
+                <p style="font-family: Century Gothic">Get your professional CV created for just Rs. 200! 🎯 Stand out and grab the attention of employers. Send a message now and get your CV created! 🚀</p>
+                <div class="price">Rs 200.00</div>
+                <div class="options-container">
+                <button class="button-27" role="button"  onclick="openPopup()">BUY</button>
+                <div class="popup" id="popupCard">
+        <h2>Choose What You Like Massage Option</h2>
+        <div class="options-container">
+        <!-- Options buttons -->
+        <div class="option-buttons">
+            <a href="https://www.facebook.com/people/Blee/61570855047065/"><button class="option-btn" >Facebook</button></a>
+            <a href="https://api.whatsapp.com/send?phone=94783962687"><button class="option-btn" >Whatsapp</button></a>
+        </div>
+            <!-- Close button -->
+        <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+         <script>
+        // Function to open the popup
+        function openPopup() {
+            document.getElementById('popupCard').style.display = 'block';
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById('popupCard').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
